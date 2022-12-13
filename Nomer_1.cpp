@@ -36,15 +36,15 @@ int main(int argc, char const *argv[])
     cout << "Alamat : " ;
     cin >> alamat;
 
-    // Student student1 = Student("ucup", "jakarta", 18);
+    
     Student student1 = Student(nama, alamat, umur);
     student1.tampilkanData();
 
     cout << "Apakah data sudah benar (jika ya input 1 jika tidak input 0) : " ;
     cin >> pilih;
 
-    if (pilih == 1) {
-        while(pilih != 0) {
+    if (pilih == 0) {
+        while(pilih != 1) {
                 string nama, alamat;
                 int umur;
 
@@ -55,7 +55,7 @@ int main(int argc, char const *argv[])
                 cout << "Alamat : " ;
                 cin >> alamat;
 
-                // Student student1 = Student("ucup", "jakarta", 18);
+                
                 Student student1 = Student(nama, alamat, umur);
                 student1.tampilkanData();
 
